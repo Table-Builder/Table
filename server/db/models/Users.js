@@ -28,3 +28,10 @@ const User = db.define(
     },
     { timestamp: false }
 );
+
+//for debugging:
+// User.addHook('beforeSave', async () => {
+//     console.log('user created!');
+// });
+
+module.exports = User;

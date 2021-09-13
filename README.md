@@ -6,6 +6,8 @@
 
 ## Currently working on:
 
+-   **Don't forget to npm i**
+-   **Create a db called 'table_builder'**
 -   Database
 
 ## To-Do list:
@@ -22,3 +24,4 @@
 -   Saving
 -   Nice UI
 -   Deploy
+-   Admin tools
