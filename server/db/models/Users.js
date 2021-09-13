@@ -33,7 +33,7 @@ const User = db.define(
             defaultValue: false,
         },
     },
-    { timestamp: false }
+    { timestamps: false }
 );
 
 //for debugging:

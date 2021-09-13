@@ -11,19 +11,19 @@ const syncAndSeed = async () => {
         // ------------Sample Users------------
         const sampleUsers = [
             User.create({
-                unserName: 'mpiech',
+                userName: 'mpiech',
                 password: 'Welcome123',
                 email: 'mpiech@gmail.com',
                 admin: true,
             }),
             User.create({
-                unserName: 'kfless',
+                userName: 'kfless',
                 password: 'Welcome456',
                 email: 'kfless@gmail.com',
                 admin: true,
             }),
             User.create({
-                unserName: 'user1',
+                userName: 'user1',
                 password: 'Welcome789',
                 email: 'guest@gmail.com',
                 admin: false,

@@ -1,15 +1,9 @@
-const { STRING, DATEONLY, DATE } = require('sequelize');
+const { STRING } = require('sequelize');
 const db = require('../db');
 
 const Table = db.define('table', {
     tableName: {
         type: STRING,
-    },
-    dateCreated: {
-        type: DATEONLY,
-    },
-    dateUpdated: {
-        type: DATE,
     },
 });
 

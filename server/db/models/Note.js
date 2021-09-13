@@ -1,4 +1,4 @@
-const { STRING, TEXT, DATEONLY } = require('sequelize');
+const { STRING, TEXT } = require('sequelize');
 const db = require('../db');
 
 const Note = db.define('note', {
@@ -12,9 +12,7 @@ const Note = db.define('note', {
     },
     note: {
         type: TEXT,
-        dateCreated: DATEONLY,
     },
-    dateCreated: {},
 });
 
 module.exports = Note;
