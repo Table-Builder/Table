@@ -12,6 +12,13 @@ const User = db.define(
             },
             defaultValue: 'Anonymous Mouse',
         },
+        password: {
+            type: STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true,
+            },
+        },
         email: {
             type: STRING,
             allowNull: false,
