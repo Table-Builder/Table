@@ -1,7 +1,7 @@
 const faker = require('faker');
 const { Table, Note } = require('../index');
 
-const syncAndSeedKacper = async () => {
+const syncAndSeedUser = async () => {
     try {
         // ------------Sample Tables------------
         const userTables = [
@@ -29,33 +29,33 @@ const syncAndSeedKacper = async () => {
             Note.create({
                 title: 'Amazon',
                 note: faker.lorem.sentence(),
-                tableId: 2,
+                tableId: 10,
             }),
             Note.create({
                 title: 'BestBuys',
                 note: faker.lorem.sentence(),
-                tableId: 1,
+                tableId: 10,
             }),
             Note.create({
                 title: 'Codesmith',
                 note: faker.lorem.sentence(),
-                tableId: 3,
+                tableId: 9,
             }),
             Note.create({
                 title: 'Facebook',
                 note: faker.lorem.sentence(),
-                tableId: 2,
+                tableId: 11,
             }),
             Note.create({
                 title: 'Google',
                 note: faker.lorem.sentence(),
-                tableId: 4,
+                tableId: 12,
             }),
         ];
         await Promise.all(userNotes);
     } catch (error) {
-        console.log('error in the Kacper seed file: ', error);
+        console.log('error in the User seed file: ', error);
     }
 };
 
-module.exports = syncAndSeedKacper;
+module.exports = syncAndSeedUser;
