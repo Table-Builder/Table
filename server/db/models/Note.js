@@ -6,7 +6,7 @@ const Note = db.define('note', {
         type: STRING,
         allowNull: false,
         validate: {
-            allowEmpty: false,
+            notEmpty: false,
         },
         defaultValue: 'NOTE TITLE',
     },

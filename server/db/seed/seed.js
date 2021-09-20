@@ -1,8 +1,5 @@
-const faker = require('faker');
-const db = require('./db');
-const User = require('./models/Users');
-const Note = require('./models/Note');
-const Table = require('./models/Table');
+const db = require('../db');
+const { User } = require('../index');
 
 const syncAndSeed = async () => {
     try {
@@ -15,27 +12,27 @@ const syncAndSeed = async () => {
                 password: 'Welcome123',
                 email: 'mpiech@gmail.com',
                 admin: true,
+                id: 1,
             }),
             User.create({
                 userName: 'kfless',
                 password: 'Welcome456',
                 email: 'kfless@gmail.com',
                 admin: true,
+                id: 2,
             }),
             User.create({
                 userName: 'user1',
                 password: 'Welcome789',
                 email: 'guest@gmail.com',
                 admin: false,
+                id: 3,
             }),
         ];
-        // ------------Sample Tables------------
-
-        // ------------Sample Notes------------
 
         await Promise.all(sampleUsers);
     } catch (error) {
-        console.log('error in the seed file: ', error);
+        console.lof('error occured in seed file: ', error);
     }
 };
 

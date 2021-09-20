@@ -11,3 +11,9 @@ User.hasMany(Table);
 
 Note.belongsTo(Table);
 Table.hasMany(Note);
+
+module.exports = {
+    User,
+    Table,
+    Note,
+};

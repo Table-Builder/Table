@@ -1,9 +1,11 @@
 const app = require('./server');
 const PORT = process.env.PORT || 3000;
-const syncAndSeed = require('./db/seed');
+const syncAndSeed = require('./db/seed/seed');
+const syncAndSeedKacper = require('./db/seed/seedKacper');
 
 const init = async () => {
     await syncAndSeed();
+    await syncAndSeedKacper();
     app.listen(PORT, () => console.log(`server started on port: ${PORT}`));
 };
 
