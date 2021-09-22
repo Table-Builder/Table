@@ -11,4 +11,16 @@ userRouter.get('/', async (req, res, next) => {
     }
 });
 
+userRouter.get('/:id', async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const user = await User.findByPk(id);
+        res.send(user);
+        console.log(id);
+    } catch (error) {
+        console.log('error in single user router', error);
+        next(error);
+    }
+});
+
 module.exports = userRouter;
