@@ -28,9 +28,9 @@
 
 4. Seed data:
 
--   User
--   Notebook
--   Table
+-   ~~User~~
+-   ~~Notebook~~
+-   ~~Table~~
 -   ~~Note~~
 
 ---
