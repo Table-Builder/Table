@@ -10,6 +10,7 @@ const init = async () => {
     await syncAndSeedKacper();
     await syncAndSeedKevin();
     await syncAndSeedUser();
+
     app.listen(PORT, () => console.log(`server started on port: ${PORT}`));
 };
 
