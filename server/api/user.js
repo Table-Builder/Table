@@ -6,7 +6,7 @@ userRouter.get('/', async (req, res, next) => {
         const users = await User.findAll();
         res.send(users);
     } catch (error) {
-        console.log('error in user router', error);
+        console.log('error in users router: ', error);
         next(error);
     }
 });
@@ -20,7 +20,7 @@ userRouter.get('/:id', async (req, res, next) => {
         res.send(user);
         console.log(id);
     } catch (error) {
-        console.log('error in single user router', error);
+        console.log('error in single user router: ', error);
         next(error);
     }
 });
