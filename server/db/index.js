@@ -11,11 +11,23 @@ const Note = require('./models/Note');
 User.hasMany(Notebook);
 Notebook.belongsTo(User);
 
-Notebook.hasMany(Table);
-Table.belongsTo(Notebook);
+// Notebook.hasMany(Table);
+// Table.belongsTo(Notebook);
 
-Note.belongsTo(Table);
-Table.hasMany(Note);
+// Note.belongsTo(Table);
+// Table.hasMany(Note);
+
+Note.belongsToMany(Notebook, {
+    through: 'table',
+    foreignKey: 'notebookId',
+    otherKey: 'noteId',
+});
+
+Notebook.belongsToMany(Note, {
+    through: 'table',
+    foreignKey: 'noteId',
+    otherKey: 'notebookId',
+});
 
 module.exports = {
     User,

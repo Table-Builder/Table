@@ -6,7 +6,7 @@ notebookRouter.get('/', async (req, res, next) => {
         const notebooks = await Notebook.findAll({
             include: [
                 {
-                    model: Table,
+                    model: Note,
                 },
             ],
         });
@@ -20,11 +20,11 @@ notebookRouter.get('/', async (req, res, next) => {
 notebookRouter.get('/:id', async (req, res, next) => {
     try {
         const id = req.params.id;
-        const notebook = await Notebook.findByPk(id, {
+        const notebook = await Notebook.findOne({
+            wehre: {
+                id: id,
+            },
             include: [
-                {
-                    model: Table,
-                },
                 {
                     model: Note,
                 },
