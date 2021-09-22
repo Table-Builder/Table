@@ -22,7 +22,7 @@
 3. Create the models:
 
 -   ~~User~~
--   Notebook
+-   ~~Notebook~~
 -   ~~Table~~
 -   ~~Note~~
 

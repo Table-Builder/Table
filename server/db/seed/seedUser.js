@@ -1,25 +1,38 @@
 const faker = require('faker');
-const { Table, Note } = require('../index');
+const { Table, Note, Notebook } = require('../index');
 
 const syncAndSeedUser = async () => {
     try {
         // ------------Sample Tables------------
+        const userNotebooks = [
+            Notebook.create({
+                name: 'Table 1',
+                userId: 3,
+            }),
+            Notebook.create({
+                name: 'Table 2',
+                userId: 3,
+            }),
+        ];
+
+        await Promise.all(userNotebooks);
+        // ------------Sample Tables------------
         const userTables = [
             Table.create({
                 tableName: 'Applied',
-                userId: 3,
+                notebookId: 5,
             }),
             Table.create({
                 tableName: 'Interviewing',
-                userId: 3,
+                notebookId: 5,
             }),
             Table.create({
                 tableName: 'Rejected',
-                userId: 3,
+                notebookId: 5,
             }),
             Table.create({
                 tableName: 'Accepter',
-                userId: 3,
+                notebookId: 5,
             }),
         ];
 

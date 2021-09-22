@@ -1,25 +1,38 @@
 const faker = require('faker');
-const { Table, Note } = require('../index');
+const { Notebook, Table, Note } = require('../index');
 
 const syncAndSeedKacper = async () => {
     try {
         // ------------Sample Tables------------
+        const kacperNotebooks = [
+            Notebook.create({
+                name: 'Work Search',
+                userId: 1,
+            }),
+            Notebook.create({
+                name: 'Fun',
+                userId: 1,
+            }),
+        ];
+
+        await Promise.all(kacperNotebooks);
+        // ------------Sample Tables------------
         const kacperTables = [
             Table.create({
                 tableName: 'Applied',
-                userId: 1,
+                notebookId: 1,
             }),
             Table.create({
                 tableName: 'Interviewing',
-                userId: 1,
+                notebookId: 1,
             }),
             Table.create({
                 tableName: 'Rejected',
-                userId: 1,
+                notebookId: 1,
             }),
             Table.create({
                 tableName: 'Accepter',
-                userId: 1,
+                notebookId: 1,
             }),
         ];
 
