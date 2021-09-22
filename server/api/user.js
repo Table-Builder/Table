@@ -14,7 +14,9 @@ userRouter.get('/', async (req, res, next) => {
 userRouter.get('/:id', async (req, res, next) => {
     try {
         const id = req.params.id;
-        const user = await User.findByPk(id);
+        const user = await User.findByPk(id, {
+            attributes: { exclude: ['password'] },
+        });
         res.send(user);
         console.log(id);
     } catch (error) {
