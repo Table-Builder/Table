@@ -26,7 +26,7 @@ notebookRouter.get('/:id', async (req, res, next) => {
             },
             include: [
                 {
-                    model: Note,
+                    model: Table,
                 },
             ],
         });

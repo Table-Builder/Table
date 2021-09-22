@@ -8,8 +8,8 @@ const syncAndSeedUser = require('./db/seed/seedUser');
 const init = async () => {
     await syncAndSeed();
     await syncAndSeedKacper();
-    // await syncAndSeedKevin();
-    // await syncAndSeedUser();
+    await syncAndSeedKevin();
+    await syncAndSeedUser();
 
     app.listen(PORT, () => console.log(`server started on port: ${PORT}`));
 };
