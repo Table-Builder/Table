@@ -13,10 +13,11 @@
 -   **Don't forget to npm i**
 -   **Backedn Router**
 
--   Router for Users
--   Router for User based on id
--   Router for Notebooks
+-   ~~Router for Users~~
+-   ~~Router for User based on id~~
+-   ~~Router for Notebooks~~
 -   Router for Notebooks based on id
+    **I need to add notes to particular tables**
 -   Router for Tables
 -   Router for Tables based on id
 -   Router for Notes
