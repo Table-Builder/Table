@@ -3,7 +3,13 @@ const { Notebook, Table, Note } = require('../db/index');
 
 notebookRouter.get('/', async (req, res, next) => {
     try {
-        const notebooks = await Notebook.findAll({});
+        const notebooks = await Notebook.findAll({
+            // include: [
+            //     {
+            //         model: Note,
+            //     },
+            // ],
+        });
         res.send(notebooks);
     } catch (error) {
         console.log('error in notebooks router: ', error);
