@@ -3,7 +3,7 @@ const { Table, Note, Notebook } = require('../index');
 
 const syncAndSeedUser = async () => {
     try {
-        // ------------Sample Tables------------
+        // ------------Sample Notebooks------------
         const userNotebooks = [
             Notebook.create({
                 name: 'Table 1',
