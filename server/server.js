@@ -13,5 +13,3 @@ app.get('/', (req, res, next) => {
 app.use(express.json());
 
 module.exports = app;
-
-// quick note
