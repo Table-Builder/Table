@@ -11,7 +11,35 @@
 ## Currently working on:
 
 -   **Don't forget to npm i**
--   **Backedn Router**
+    **Set Up CI And Jest**
+    -   Jest
+    -   Simple tests
+    -   CI with Travis
+
+---
+
+## To-Do list:
+
+-   ~~Basic server~~
+-   ~~Router for backend~~
+-   ~~Database~~
+-   Frontend
+
+---
+
+## For the future:
+
+-   Linter
+-   Movable entries on the table
+-   User auth
+-   Saving
+-   Nice UI
+-   Deploy
+-   Admin tools
+
+## Done:
+
+**Backedn Router**
 
 -   ~~Router for Users~~
 -   ~~Router for User based on id~~
@@ -22,23 +50,3 @@
 -   ~~Router for Notes~~
 -   ~~Router for Notes based on id~~
     **~~I need to add notes to particular tables~~**
-
----
-
-## To-Do list:
-
--   Basic server
--   Router for backend
--   Database
--   Frontend
-
----
-
-## For the future:
-
--   Movable entries on the table
--   User auth
--   Saving
--   Nice UI
--   Deploy
--   Admin tools
