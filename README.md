@@ -17,11 +17,11 @@
 -   ~~Router for User based on id~~
 -   ~~Router for Notebooks~~
 -   ~~Router for Notebooks based on id~~
--   Router for Tables
--   Router for Tables based on id
+-   ~~Router for Tables~~
+-   ~~Router for Tables based on id~~
 -   Router for Notes
 -   Router for Notes based on id
-    **I need to add notes to particular tables**
+    **~~I need to add notes to particular tables~~**
 
 ---
 
