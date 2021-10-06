@@ -70,9 +70,37 @@ describe('Testing routes', () => {
         });
     });
 
-    // describe('GET /api/user/1', () => {
+    describe('GET /api/notebook/1', () => {
+        it('expects the route for the user 1 to be accessible', async () => {
+            const response = await app.get('/api/notebook/1');
+            const body = response.body;
+
+            expect(response.status).toEqual(200);
+            expect(response.type).toEqual('application/json');
+            expect(response.res.statusMessage).toEqual('OK');
+            expect(response.res.complete).toEqual(true);
+            expect(body.id).toEqual(1);
+            expect(body.tables.length).toEqual(4);
+            expect(body.userId).toEqual(1);
+        });
+    });
+
+    // Tables
+
+    describe('GET /api/table', () => {
+        it('expects the route to exist', async () => {
+            const response = await app.get('/api/table');
+
+            expect(response.status).toEqual(200);
+            expect(response.type).toEqual('application/json');
+            expect(response.res.statusMessage).toEqual('OK');
+            expect(response.res.complete).toEqual(true);
+        });
+    });
+
+    // describe('GET /api/notebook/1', () => {
     //     it('expects the route for the user 1 to be accessible', async () => {
-    //         const response = await app.get('/api/user/1');
+    //         const response = await app.get('/api/notebook/1');
     //         const body = response.body;
 
     //         expect(response.status).toEqual(200);
@@ -80,12 +108,36 @@ describe('Testing routes', () => {
     //         expect(response.res.statusMessage).toEqual('OK');
     //         expect(response.res.complete).toEqual(true);
     //         expect(body.id).toEqual(1);
-    //         expect(body.userName).toEqual('mpiech');
-    //         expect(body.admin).toEqual(true);
+    //         expect(body.tables.length).toEqual(4);
+    //         expect(body.userId).toEqual(1);
     //     });
     // });
 
-    // Tables
-
     // Notes
+
+    describe('GET /api/note', () => {
+        it('expects the route to exist', async () => {
+            const response = await app.get('/api/note');
+
+            expect(response.status).toEqual(200);
+            expect(response.type).toEqual('application/json');
+            expect(response.res.statusMessage).toEqual('OK');
+            expect(response.res.complete).toEqual(true);
+        });
+    });
+
+    // describe('GET /api/notebook/1', () => {
+    //     it('expects the route for the user 1 to be accessible', async () => {
+    //         const response = await app.get('/api/notebook/1');
+    //         const body = response.body;
+
+    //         expect(response.status).toEqual(200);
+    //         expect(response.type).toEqual('application/json');
+    //         expect(response.res.statusMessage).toEqual('OK');
+    //         expect(response.res.complete).toEqual(true);
+    //         expect(body.id).toEqual(1);
+    //         expect(body.tables.length).toEqual(4);
+    //         expect(body.userId).toEqual(1);
+    //     });
+    // });
 });
