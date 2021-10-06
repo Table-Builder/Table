@@ -32,7 +32,7 @@ describe('Testing routes', () => {
     // Users
 
     describe('GET /api/user', () => {
-        it('expects the route to exist', async () => {
+        it('expects the user route to exist', async () => {
             const response = await app.get('/api/user');
 
             expect(response.status).toEqual(200);
@@ -60,7 +60,7 @@ describe('Testing routes', () => {
     // Notebooks
 
     describe('GET /api/notebook', () => {
-        it('expects the route to exist', async () => {
+        it('expects the notebook route to exist', async () => {
             const response = await app.get('/api/notebook');
 
             expect(response.status).toEqual(200);
@@ -71,7 +71,7 @@ describe('Testing routes', () => {
     });
 
     describe('GET /api/notebook/1', () => {
-        it('expects the route for the user 1 to be accessible', async () => {
+        it('expects the route for the notebook 1 to be accessible', async () => {
             const response = await app.get('/api/notebook/1');
             const body = response.body;
 
@@ -88,7 +88,7 @@ describe('Testing routes', () => {
     // Tables
 
     describe('GET /api/table', () => {
-        it('expects the route to exist', async () => {
+        it('expects the table route to exist', async () => {
             const response = await app.get('/api/table');
 
             expect(response.status).toEqual(200);
@@ -98,25 +98,25 @@ describe('Testing routes', () => {
         });
     });
 
-    // describe('GET /api/notebook/1', () => {
-    //     it('expects the route for the user 1 to be accessible', async () => {
-    //         const response = await app.get('/api/notebook/1');
-    //         const body = response.body;
+    describe('GET /api/table/1', () => {
+        it('expects the route for the table 1 to be accessible', async () => {
+            const response = await app.get('/api/table/1');
+            const body = response.body;
 
-    //         expect(response.status).toEqual(200);
-    //         expect(response.type).toEqual('application/json');
-    //         expect(response.res.statusMessage).toEqual('OK');
-    //         expect(response.res.complete).toEqual(true);
-    //         expect(body.id).toEqual(1);
-    //         expect(body.tables.length).toEqual(4);
-    //         expect(body.userId).toEqual(1);
-    //     });
-    // });
+            expect(response.status).toEqual(200);
+            expect(response.type).toEqual('application/json');
+            expect(response.res.statusMessage).toEqual('OK');
+            expect(response.res.complete).toEqual(true);
+            expect(body.id).toEqual(1);
+            expect(body.tableName).toEqual('Applied');
+            expect(body.notes.length).toEqual(1);
+        });
+    });
 
     // Notes
 
     describe('GET /api/note', () => {
-        it('expects the route to exist', async () => {
+        it('expects the note route to exist', async () => {
             const response = await app.get('/api/note');
 
             expect(response.status).toEqual(200);
@@ -127,7 +127,7 @@ describe('Testing routes', () => {
     });
 
     // describe('GET /api/notebook/1', () => {
-    //     it('expects the route for the user 1 to be accessible', async () => {
+    //     it('expects the route for the note 1 to be accessible', async () => {
     //         const response = await app.get('/api/notebook/1');
     //         const body = response.body;
 

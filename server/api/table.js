@@ -27,7 +27,6 @@ tableRouter.get('/:id', async (req, res, next) => {
                 },
             ],
         });
-        console.log(table);
         res.send(table);
     } catch (error) {
         console.log('error in single table: ', error);
