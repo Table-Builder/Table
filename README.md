@@ -11,27 +11,17 @@
 ## Currently working on:
 
 -   **Don't forget to npm i**
--   **Create a db called 'table_builder'**
--   This is going to be a very large update. Pretty much here is what has been done:
+-   **Backedn Router**
 
-1. Changed schema: I am addding a Notebook model in base the user wants to have multiple data sets
-
--   User has many Notebooks (User 1==>many Notebook), Notebook 1==>many Table, Table 1==>many Note
-
-2. Create the database
-3. Create the models:
-
--   ~~User~~
--   ~~Notebook~~
--   ~~Table~~
--   ~~Note~~
-
-4. Seed data:
-
--   ~~User~~
--   ~~Notebook~~
--   ~~Table~~
--   ~~Note~~
+-   ~~Router for Users~~
+-   ~~Router for User based on id~~
+-   ~~Router for Notebooks~~
+-   ~~Router for Notebooks based on id~~
+-   ~~Router for Tables~~
+-   ~~Router for Tables based on id~~
+-   ~~Router for Notes~~
+-   ~~Router for Notes based on id~~
+    **~~I need to add notes to particular tables~~**
 
 ---
 

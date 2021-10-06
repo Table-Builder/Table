@@ -3,7 +3,7 @@ const { Notebook, Table, Note } = require('../index');
 
 const syncAndSeedKacper = async () => {
     try {
-        // ------------Sample Tables------------
+        // ------------Sample Notebooks------------
         const kacperNotebooks = [
             Notebook.create({
                 name: 'Work Search',
@@ -31,7 +31,7 @@ const syncAndSeedKacper = async () => {
                 notebookId: 1,
             }),
             Table.create({
-                tableName: 'Accepter',
+                tableName: 'Accepted',
                 notebookId: 1,
             }),
         ];
