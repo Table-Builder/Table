@@ -20,15 +20,16 @@
 
 ## To-Do list:
 
--   Basic server
--   Router for backend
--   Database
+-   ~~Basic server~~
+-   ~~Router for backend~~
+-   ~~Database~~
 -   Frontend
 
 ---
 
 ## For the future:
 
+-   Linter
 -   Movable entries on the table
 -   User auth
 -   Saving
