@@ -11,17 +11,10 @@
 ## Currently working on:
 
 -   **Don't forget to npm i**
--   **Backedn Router**
-
--   ~~Router for Users~~
--   ~~Router for User based on id~~
--   ~~Router for Notebooks~~
--   ~~Router for Notebooks based on id~~
--   ~~Router for Tables~~
--   ~~Router for Tables based on id~~
--   ~~Router for Notes~~
--   ~~Router for Notes based on id~~
-    **~~I need to add notes to particular tables~~**
+    **Set Up CI And Jest**
+    -   Jest
+    -   Simple tests
+    -   CI with Travis
 
 ---
 
@@ -42,3 +35,17 @@
 -   Nice UI
 -   Deploy
 -   Admin tools
+
+## Done:
+
+**Backedn Router**
+
+-   ~~Router for Users~~
+-   ~~Router for User based on id~~
+-   ~~Router for Notebooks~~
+-   ~~Router for Notebooks based on id~~
+-   ~~Router for Tables~~
+-   ~~Router for Tables based on id~~
+-   ~~Router for Notes~~
+-   ~~Router for Notes based on id~~
+    **~~I need to add notes to particular tables~~**
