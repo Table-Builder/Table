@@ -18,7 +18,7 @@ noteRouter.get('/:id', async (req, res, next) => {
         res.send(note);
     } catch (error) {
         console.log();
-        next(next);
+        next(error);
     }
 });
 
