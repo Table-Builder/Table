@@ -126,18 +126,18 @@ describe('Testing routes', () => {
         });
     });
 
-    // describe('GET /api/notebook/1', () => {
-    //     it('expects the route for the note 1 to be accessible', async () => {
-    //         const response = await app.get('/api/notebook/1');
-    //         const body = response.body;
+    describe('GET /api/note/1', () => {
+        it('expects the route for the note 1 to be accessible', async () => {
+            const response = await app.get('/api/note/1');
+            const body = response.body;
 
-    //         expect(response.status).toEqual(200);
-    //         expect(response.type).toEqual('application/json');
-    //         expect(response.res.statusMessage).toEqual('OK');
-    //         expect(response.res.complete).toEqual(true);
-    //         expect(body.id).toEqual(1);
-    //         expect(body.tables.length).toEqual(4);
-    //         expect(body.userId).toEqual(1);
-    //     });
-    // });
+            expect(response.status).toEqual(200);
+            expect(response.type).toEqual('application/json');
+            expect(response.res.statusMessage).toEqual('OK');
+            expect(response.res.complete).toEqual(true);
+            expect(body.id).toEqual(1);
+            expect(body.tableId).toEqual(2);
+            expect(body.title).toEqual('Amazon');
+        });
+    });
 });
