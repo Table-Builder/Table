@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest",
         "start": "node server/index.js",
         "start:dev": "nodemon server/index"
     },
@@ -27,6 +27,8 @@
     },
     "devDependencies": {
         "faker": "^5.5.3",
-        "nodemon": "^2.0.12"
+        "jest": "^27.2.4",
+        "nodemon": "^2.0.12",
+        "supertest": "^6.1.6"
     }
 }
