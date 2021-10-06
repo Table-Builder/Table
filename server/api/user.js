@@ -18,7 +18,6 @@ userRouter.get('/:id', async (req, res, next) => {
             attributes: { exclude: ['password'] },
         });
         res.send(user);
-        console.log(id);
     } catch (error) {
         console.log('error in single user router: ', error);
         next(error);
