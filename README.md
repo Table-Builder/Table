@@ -11,10 +11,22 @@
 ## Currently working on:
 
 -   **Don't forget to npm i**
-    **Set Up CI And Jest**
-    -   Jest
-    -   Simple tests
-    -   CI with Travis
+    **Set Up Basic Frontend in React**
+
+    -   ~~HTML file~~
+    -   Basic React Component
+    -   Design the views:
+        -- Home Page
+        -- Login screen
+        -- Notebook screen
+        -- Opened Notebook
+    -   Add React Router
+    -   Set up Redux
+    -   Use local storage for the notebook information
+    -   Use Cookies instead of local storage
+
+-   Current bugs:
+    -- seedfile
 
 ---
 
@@ -23,6 +35,7 @@
 -   ~~Basic server~~
 -   ~~Router for backend~~
 -   ~~Database~~
+-   ~~Testing~~
 -   Frontend
 
 ---
@@ -50,3 +63,7 @@
 -   ~~Router for Notes~~
 -   ~~Router for Notes based on id~~
     **~~I need to add notes to particular tables~~**
+
+    -   ~~Jest~~
+    -   ~~Simple tests~~
+    -   ~~CI with Travis~~

@@ -32,7 +32,8 @@ const syncAndSeed = async () => {
 
         await Promise.all(sampleUsers);
     } catch (error) {
-        console.lof('error occured in seed file: ', error);
+        console.log('error occured in seed file: ', error);
+        next(error);
     }
 };
 
