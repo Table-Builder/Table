@@ -12,7 +12,7 @@
 
 -   **Don't forget to npm i**
     **Set Up Basic Frontend in React**
-    -   HTML file
+    -   ~~HTML file~~
     -   Basic React Component
     -   Design the views:
         -- Home Page
