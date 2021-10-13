@@ -14,9 +14,10 @@
     **Set Up Basic Frontend in React**
 
     -   ~~HTML file~~
-    -   Basic React Component
+    -   ~~Basic React Component~~
     -   Design the views:
         -- Home Page
+        -- NavBar
         -- Login screen
         -- Notebook screen
         -- Opened Notebook
