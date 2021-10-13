@@ -12,6 +12,7 @@
 
 -   **Don't forget to npm i**
     **Set Up Basic Frontend in React**
+
     -   ~~HTML file~~
     -   Basic React Component
     -   Design the views:
@@ -23,6 +24,9 @@
     -   Set up Redux
     -   Use local storage for the notebook information
     -   Use Cookies instead of local storage
+
+-   Current bugs:
+    -- seedfile
 
 ---
 
