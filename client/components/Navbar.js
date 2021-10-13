@@ -9,9 +9,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position='static'>
-                <Toolbar>
+        <Box sx={{ flexGrow: 1 }} component='nav'>
+            <AppBar position='static' style={{ background: '#009933' }}>
+                <Toolbar
+                    style={{ display: 'flex', justifyContent: 'space-between' }}
+                >
                     <Button color='inherit'>Home</Button>
                     <Button color='inherit'>Dashboard</Button>
                     <Button color='inherit'>Log in</Button>
