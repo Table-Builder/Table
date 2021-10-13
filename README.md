@@ -17,6 +17,7 @@
     -   ~~Basic React Component~~
     -   Design the views:
         -- Home Page
+        -- NavBar
         -- Login screen
         -- Notebook screen
         -- Opened Notebook
