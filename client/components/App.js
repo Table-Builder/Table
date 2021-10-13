@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
     // initially set up a local state
