@@ -18,30 +18,41 @@ class Home extends Component {
                             justifyContent: 'flex-end',
                         }}
                     >
-                        <Box
+                        <Paper
+                            sx={{
+                                variant: 'rounded',
+                                position: 'relative',
+                                backgroundColor: 'grey.800',
+                                color: '#fff',
+                                mb: 4,
+                                backgroundSize: 'cover',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                backgroundImage: `url(${faker.image.imageUrl()})`,
+                            }}
                             style={{
                                 display: 'flex',
                                 flexDirection: 'column',
+                                flex: 3,
+                                marginRight: '1rem',
+                                alignItems: 'flex-end',
                             }}
                         >
                             <h1>We help you stay organised</h1>
                             <p>{faker.fake('{{lorem.paragraph}}')}</p>
-                        </Box>
+                        </Paper>
+                        <Paper
+                            sx={{
+                                variant: 'rounded',
+                                backgroundSize: 'cover',
+                                backgroundImage: `url(${faker.image.imageUrl()})`,
+                            }}
+                            style={{
+                                flex: 1,
+                            }}
+                        />
                     </Box>
                 </Box>
-                <Paper
-                    sx={{
-                        elevation: 3,
-                        position: 'relative',
-                        backgroundColor: 'grey.800',
-                        color: '#fff',
-                        mb: 4,
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center',
-                        backgroundImage: `url(https://source.unsplash.com/random)`,
-                    }}
-                ></Paper>
             </Box>
         );
     }
