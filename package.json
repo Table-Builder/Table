@@ -5,8 +5,11 @@
     "main": "index.js",
     "scripts": {
         "test": "jest --runInBand",
+        "test:dev": "jest -w",
         "start": "node server/index.js",
-        "start:dev": "nodemon server/index"
+        "start:dev": "nodemon server/index & npm run build:dev",
+        "build": "webpack",
+        "build:dev": "webpack -w"
     },
     "repository": {
         "type": "git",
