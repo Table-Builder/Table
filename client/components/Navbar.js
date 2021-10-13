@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
-import {
-    AppBar,
-    Box,
-    Toolbar,
-    Button,
-    Tabs,
-    Tab,
-    MenuIcon,
-} from '@mui/material';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import { AppBar, Box, Toolbar, Button, Paper } from '@mui/material';
 
 const Navbar = () => {
     return (
