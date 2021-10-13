@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Home from './Home';
+import Navbar from './Navbar';
 
 class App extends Component {
     // initially set up a local state
@@ -16,6 +17,7 @@ class App extends Component {
         return (
             <div>
                 <Router>
+                    <Navbar />
                     <Route exact path='/' component={Home} />
                 </Router>
             </div>

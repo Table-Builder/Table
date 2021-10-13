@@ -44,6 +44,7 @@
 ## For the future:
 
 -   Linter
+-   Make the nav bar floato to the top: https://mui.com/components/app-bar/
 -   Movable entries on the table
 -   User auth
 -   Saving
