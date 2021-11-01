@@ -45,7 +45,7 @@ const Navbar = () => {
                                 color='inherit'
                                 variant='h6'
                                 underline='none'
-                                href='/premium-themes/onepirate/sign-in/'
+                                href=''
                                 sx={rightLink}
                             >
                                 {'Sign In'}
@@ -53,10 +53,10 @@ const Navbar = () => {
                             <Link
                                 variant='h6'
                                 underline='none'
-                                href='/premium-themes/onepirate/sign-up/'
+                                href=''
                                 sx={{
                                     ...rightLink,
-                                    color: 'secondary.main',
+                                    color: 'red',
                                 }}
                             >
                                 {'Sign Up'}
