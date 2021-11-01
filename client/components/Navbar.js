@@ -1,41 +1,70 @@
 import React, { Component } from 'react';
-import { AppBar, Box, Toolbar, Button, Paper } from '@mui/material';
+import { Box } from '@mui/material';
+import MuiToolbar from '@mui/material/Toolbar';
+import MuiAppBar from '@mui/material/AppBar';
+import Link from '@mui/material/Link';
+import { styled } from '@mui/material/styles';
+
+const Toolbar = styled(MuiToolbar)(({ theme }) => ({
+    height: 64,
+    [theme.breakpoints.up('sm')]: {
+        height: 70,
+    },
+}));
+
+const rightLink = {
+    fontSize: 16,
+    color: 'common.white',
+    ml: 3,
+};
 
 const Navbar = () => {
     return (
         <div>
-            <Box sx={{ flexGrow: 1 }} component='nav'>
-                <AppBar position='static' style={{ background: '#009933' }}>
-                    <Toolbar
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'space-around',
-                        }}
-                    >
-                        <Box
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'space-around',
-                                flex: 3,
-                            }}
+            <MuiAppBar position='fixed'>
+                <MuiAppBar position='fixed' elevation={0}>
+                    <Toolbar sx={{ justifyContent: 'space-between' }}>
+                        <Box sx={{ flex: 1 }} />
+                        <Link
+                            variant='h6'
+                            underline='none'
+                            color='inherit'
+                            href=''
+                            sx={{ fontSize: 24 }}
                         >
-                            <Button color='inherit'>Home</Button>
-                            <Button color='inherit'>Dashboard</Button>
-                            <Button color='inherit'>Button3</Button>
-                            <Button color='inherit'>Button4</Button>
-                        </Box>
+                            {'Hello World'}
+                        </Link>
                         <Box
-                            style={{
+                            sx={{
+                                flex: 1,
                                 display: 'flex',
                                 justifyContent: 'flex-end',
-                                flex: 1,
                             }}
                         >
-                            <Button color='inherit'>Log in</Button>
+                            <Link
+                                color='inherit'
+                                variant='h6'
+                                underline='none'
+                                href='/premium-themes/onepirate/sign-in/'
+                                sx={rightLink}
+                            >
+                                {'Sign In'}
+                            </Link>
+                            <Link
+                                variant='h6'
+                                underline='none'
+                                href='/premium-themes/onepirate/sign-up/'
+                                sx={{
+                                    ...rightLink,
+                                    color: 'secondary.main',
+                                }}
+                            >
+                                {'Sign Up'}
+                            </Link>
                         </Box>
                     </Toolbar>
-                </AppBar>
-            </Box>
+                </MuiAppBar>
+            </MuiAppBar>
         </div>
     );
 };
