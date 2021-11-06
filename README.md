@@ -5,6 +5,8 @@
 ## Objective:
 
 -   to create an app that helps to stay organised by allowing the user to create, modify and stores data in table format
+-   to come up with a name:
+    -- slide-Stacks
 
 ---
 
@@ -17,7 +19,7 @@
     -   ~~Basic React Component~~
     -   Design the views:
         -- Home Page
-        -- ~~NavBar~~
+        -- ~~NavBar~~ => change colours
         -- Login screen
         -- Notebook screen
         -- Opened Notebook
