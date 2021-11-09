@@ -19,7 +19,7 @@ class App extends Component {
         return (
             <ThemeProvider theme={myTheme}>
                 <Router>
-                    <Navbar />
+                    {/* <Navbar /> */}
                     <Route exact path='/' component={Home} />
                 </Router>
             </ThemeProvider>
