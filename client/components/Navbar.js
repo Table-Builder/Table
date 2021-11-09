@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Box } from '@mui/material';
-import MuiToolbar from '@mui/material/Toolbar';
-import MuiAppBar from '@mui/material/AppBar';
+import { AppBar, Box, Toolbar } from '@mui/material';
 import Link from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
 
-const Toolbar = styled(MuiToolbar)(({ theme }) => ({
+const ToolbarNav = styled(Toolbar)(({ theme }) => ({
     height: 64,
     [theme.breakpoints.up('sm')]: {
         height: 70,
@@ -21,9 +19,9 @@ const rightLink = {
 const Navbar = () => {
     return (
         <div>
-            <MuiAppBar position='fixed'>
-                <MuiAppBar position='fixed' elevation={0}>
-                    <Toolbar sx={{ justifyContent: 'space-between' }}>
+            <AppBar position='fixed'>
+                <AppBar position='fixed' elevation={0}>
+                    <ToolbarNav sx={{ justifyContent: 'space-between' }}>
                         <Box sx={{ flex: 1 }} />
                         <Link
                             variant='h6'
@@ -62,9 +60,9 @@ const Navbar = () => {
                                 {'Sign Up'}
                             </Link>
                         </Box>
-                    </Toolbar>
-                </MuiAppBar>
-            </MuiAppBar>
+                    </ToolbarNav>
+                </AppBar>
+            </AppBar>
         </div>
     );
 };
