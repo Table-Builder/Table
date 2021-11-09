@@ -18,8 +18,8 @@
     -   ~~HTML file~~
     -   ~~Basic React Component~~
     -   Design the views:
-        -- Home Page
-        -- ~~NavBar~~ => change colours
+        -- ~~Home Page~~ => adding content
+        -- ~~NavBar~~
         -- Login screen
         -- Notebook screen
         -- Opened Notebook
