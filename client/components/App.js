@@ -1,26 +1,10 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 
 import Home from './Home';
 import Navbar from './Navbar';
-
-const myTheme = createTheme({
-    palette: {
-        primary: {
-            main: '#222629',
-            light: '#909aa2',
-            dark: '#000000',
-            contrastText: '#ffffff',
-        },
-        secondary: {
-            main: '#86C232',
-            light: '#a3d55d',
-            dark: '#385115',
-            contrastText: '#000000',
-        },
-    },
-});
+import myTheme from '../style/theme';
 
 class App extends Component {
     // initially set up a local state
