@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
+import { ThemeProvider } from '@mui/material/styles';
 
 import Home from './Home';
 import Navbar from './Navbar';
+import myTheme from '../style/theme';
 
 class App extends Component {
     // initially set up a local state
@@ -15,12 +17,12 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <ThemeProvider theme={myTheme}>
                 <Router>
-                    <Navbar />
+                    {/* <Navbar /> */}
                     <Route exact path='/' component={Home} />
                 </Router>
-            </div>
+            </ThemeProvider>
         );
     }
 }
