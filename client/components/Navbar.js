@@ -18,52 +18,50 @@ const rightLink = {
 
 const Navbar = () => {
     return (
-        <div>
-            <AppBar position='fixed'>
-                <AppBar position='fixed' elevation={0}>
-                    <ToolbarNav sx={{ justifyContent: 'space-between' }}>
-                        <Box sx={{ flex: 1 }} />
+        <AppBar position='fixed'>
+            <AppBar position='fixed' elevation={0} color='secondary'>
+                <ToolbarNav sx={{ justifyContent: 'space-between' }}>
+                    <Box sx={{ flex: 1 }} />
+                    <Link
+                        variant='h6'
+                        underline='none'
+                        color='inherit'
+                        href=''
+                        sx={{ fontSize: 24 }}
+                    >
+                        {'Hello World'}
+                    </Link>
+                    <Box
+                        sx={{
+                            flex: 1,
+                            display: 'flex',
+                            justifyContent: 'flex-end',
+                        }}
+                    >
+                        <Link
+                            color='inherit'
+                            variant='h6'
+                            underline='none'
+                            href=''
+                            sx={rightLink}
+                        >
+                            {'Sign In'}
+                        </Link>
                         <Link
                             variant='h6'
                             underline='none'
-                            color='inherit'
                             href=''
-                            sx={{ fontSize: 24 }}
-                        >
-                            {'Hello World'}
-                        </Link>
-                        <Box
                             sx={{
-                                flex: 1,
-                                display: 'flex',
-                                justifyContent: 'flex-end',
+                                ...rightLink,
+                                color: 'red',
                             }}
                         >
-                            <Link
-                                color='inherit'
-                                variant='h6'
-                                underline='none'
-                                href=''
-                                sx={rightLink}
-                            >
-                                {'Sign In'}
-                            </Link>
-                            <Link
-                                variant='h6'
-                                underline='none'
-                                href=''
-                                sx={{
-                                    ...rightLink,
-                                    color: 'red',
-                                }}
-                            >
-                                {'Sign Up'}
-                            </Link>
-                        </Box>
-                    </ToolbarNav>
-                </AppBar>
+                            {'Sign Up'}
+                        </Link>
+                    </Box>
+                </ToolbarNav>
             </AppBar>
-        </div>
+        </AppBar>
     );
 };
 
