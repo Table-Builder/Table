@@ -41,7 +41,7 @@ class Home extends Component {
                         alignItems: 'center',
                     }}
                 >
-                    <Typography>Hello i am backgroundColor</Typography>
+                    <Typography>Welcome to the home page</Typography>
                     <Background sx={backgroundImage} />
                 </Container>
             </HomeRoot>
