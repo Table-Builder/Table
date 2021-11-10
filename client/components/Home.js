@@ -42,7 +42,9 @@ class Home extends Component {
                         alignItems: 'center',
                     }}
                 >
-                    <Typography>Welcome to the home page</Typography>
+                    <Typography variant='h4' sx={{ fontWeight: 'medium' }}>
+                        Welcome to the home page
+                    </Typography>
                     <Background sx={backgroundImage} />
                 </Container>
             </HomeRoot>
