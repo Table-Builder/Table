@@ -9,7 +9,7 @@ const HomeRoot = styled('section')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     [theme.breakpoints.up('sm')]: {
-        height: '80vh',
+        height: '100vh',
         minHeight: 500,
         maxHeight: 1300,
     },
@@ -26,7 +26,8 @@ const Background = styled(Box)({
     zIndex: -2,
 });
 
-const backgroundImage = { backgroundImage: `url(${faker.image.imageUrl()})` };
+// const backgroundImage = { backgroundImage: `url(${faker.image.imageUrl()})` };
+const backgroundImage = { backgroundImage: `url(/public/images/robot.png)` };
 
 class Home extends Component {
     render() {
