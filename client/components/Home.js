@@ -44,55 +44,6 @@ class Home extends Component {
                     <Typography>Hello i am backgroundColor</Typography>
                     <Background sx={backgroundImage} />
                 </Container>
-                {/* <Paper color='primary'> */}
-                {/* <Box
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                    }}
-                >
-                    <Box
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'flex-end',
-                        }}
-                    >
-                        <Paper
-                            sx={{
-                                variant: 'rounded',
-                                position: 'relative',
-                                backgroundColor: 'grey.800',
-                                color: '#fff',
-                                mb: 4,
-                                backgroundSize: 'cover',
-                                backgroundRepeat: 'no-repeat',
-                                backgroundPosition: 'center',
-                                backgroundImage: `url(${faker.image.imageUrl()})`,
-                            }}
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                flex: 3,
-                                marginRight: '1rem',
-                                alignItems: 'flex-end',
-                            }}
-                        >
-                            <h1>We help you stay organised</h1>
-                            <p>{faker.fake('{{lorem.paragraph}}')}</p>
-                        </Paper>
-                        <Paper
-                            sx={{
-                                variant: 'rounded',
-                                backgroundSize: 'cover',
-                                backgroundImage: `url(${faker.image.imageUrl()})`,
-                            }}
-                            style={{
-                                flex: 1,
-                            }}
-                        />
-                    </Box>
-                </Box> */}
-                {/* </Paper> */}
             </HomeRoot>
         );
     }
