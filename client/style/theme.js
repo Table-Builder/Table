@@ -15,6 +15,9 @@ const myTheme = createTheme({
             contrastText: '#000000',
         },
     },
+    typography: {
+        fontFamily: 'Quicksand',
+    },
 });
 
 export default myTheme;
