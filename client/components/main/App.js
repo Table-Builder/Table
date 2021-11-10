@@ -4,7 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 
 import Home from './Home';
 import Navbar from './Navbar';
-import myTheme from '../style/theme';
+import myTheme from '../../style/theme';
 
 class App extends Component {
     // initially set up a local state

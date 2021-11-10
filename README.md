@@ -18,7 +18,7 @@
     -   ~~HTML file~~
     -   ~~Basic React Component~~
     -   Design the views:
-        -- ~~Home Page~~ => adding content
+        -- ~~Home Page~~
         -- ~~NavBar~~
         -- Login screen
         -- Notebook screen
