@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import faker from 'faker';
-import {
-    AppBar,
-    Box,
-    Toolbar,
-    Button,
-    Paper,
-    Container,
-    Typography,
-} from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 
 const HomeRoot = styled('section')(({ theme }) => ({
@@ -38,7 +30,6 @@ const backgroundImage = { backgroundImage: `url(${faker.image.imageUrl()})` };
 
 class Home extends Component {
     render() {
-        console.log(backgroundImage);
         return (
             <HomeRoot>
                 <Container
